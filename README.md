@@ -62,7 +62,7 @@ DB_NAME=your__databasename
 node index.js
 ```
 
-Visit:
+Send a **POST** request to:
 
 ```bash
 http://localhost:3000/api/process-csv
@@ -76,31 +76,6 @@ http://localhost:3000/api/process-csv
 ---
 
 ## 📊 Console Output
-## for sample_users_1000_extended.csv
-```csv
-name.firstName,name.lastName,age,address.line1,address.line2,address.city,address.state,gender,company.name,company.position.title,contact.email,contact.phone,preferences.language,preferences.newsletter
-Danielle,Ferguson,65,566 Osborne Lakes Suite 469,Suite 841,Port Matthewside,Texas,male,Li and Sons,"Geologist, wellsite",russellrichard@gmail.com,1283003780,Spanish,unsubscribed
-```
-
-### JSON Object
-
-![image](https://github.com/user-attachments/assets/ad3cbd4f-5494-4222-a6e0-86b485e96ed3)
-
-
-
-### Age Distribution Report
-![image](https://github.com/user-attachments/assets/1d702291-c302-4a38-8889-9af89bba20fa)
-
-### Postman
-![image](https://github.com/user-attachments/assets/e22b11cb-5d40-4faa-b362-c6d5b0c62b8a)
-
-
-
-### Database
-![image](https://github.com/user-attachments/assets/0930f94b-0c33-4daf-92ca-f23140efa5eb)
-
-
-
 ## for sample.csv
 ```csv
 name.firstName,name.lastName,age,address.line1,address.line2,address.city,address.state,gender
@@ -126,6 +101,32 @@ Rohit,Prasad,35,A-563 Rakshak Society,New Pune Road,Pune,Maharashtra,male
 
 ### Database
 ![image](https://github.com/user-attachments/assets/11abb15a-e998-4180-a298-9442d3b322d8)
+
+
+## for sample_users_1000_extended.csv
+```csv
+name.firstName,name.lastName,age,address.line1,address.line2,address.city,address.state,gender,company.name,company.position.title,contact.email,contact.phone,preferences.language,preferences.newsletter
+Danielle,Ferguson,65,566 Osborne Lakes Suite 469,Suite 841,Port Matthewside,Texas,male,Li and Sons,"Geologist, wellsite",russellrichard@gmail.com,1283003780,Spanish,unsubscribed
+```
+
+### JSON Object
+
+![image](https://github.com/user-attachments/assets/ad3cbd4f-5494-4222-a6e0-86b485e96ed3)
+
+
+
+### Age Distribution Report
+![image](https://github.com/user-attachments/assets/1d702291-c302-4a38-8889-9af89bba20fa)
+
+### Postman
+![image](https://github.com/user-attachments/assets/e22b11cb-5d40-4faa-b362-c6d5b0c62b8a)
+
+
+
+### Database
+![image](https://github.com/user-attachments/assets/0930f94b-0c33-4daf-92ca-f23140efa5eb)
+
+
 
 
 
