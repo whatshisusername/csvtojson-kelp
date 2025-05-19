@@ -22,7 +22,7 @@ app.use(express.json());
 
 // Routes
 // Make sure uploadController.processCSV is a function
-app.get('/api/process-csv', (req, res) => uploadController.processCSV(req, res));
+app.post('/api/process-csv', (req, res) => uploadController.processCSV(req, res));
 
 // Simple health check endpoint
 app.get('/health', (req, res) => {
