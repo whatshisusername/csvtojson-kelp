@@ -5,11 +5,7 @@ const ageDistribution = require('../services/ageDistribution');
 require('dotenv').config();
 
 class UploadController {
-  /**
-   * Process the CSV file and upload data to the database
-   * @param {Object} req - HTTP request object
-   * @param {Object} res - HTTP response object
-   */
+
   async processCSV(req, res) {
     try {
       console.log('Starting CSV processing...');
@@ -100,5 +96,5 @@ class UploadController {
   }
 }
 
-// Export an instance of the controller
+
 module.exports = new UploadController();

@@ -1,10 +1,7 @@
 const { pool } = require('../config/db');
 
 class AgeDistributionService {
-  /**
-   * Calculate age distribution across age groups
-   * @returns {Promise<Object>} - Age distribution percentages
-   */
+  
   async calculateDistribution() {
     try {
       const client = await pool.connect();
@@ -46,13 +43,7 @@ class AgeDistributionService {
     }
   }
   
-  /**
-   * Count users in a specific age range
-   * @param {Object} client - DB client
-   * @param {number} min - Minimum age (inclusive)
-   * @param {number} max - Maximum age (inclusive)
-   * @returns {Promise<number>} - Count of users in range
-   */
+ 
   async countInRange(client, min, max) {
     const result = await client.query(
       'SELECT COUNT(*) FROM users WHERE age >= $1 AND age <= $2',
@@ -61,10 +52,7 @@ class AgeDistributionService {
     return parseInt(result.rows[0].count);
   }
   
-  /**
-   * Print age distribution report to console
-   * @param {Object} distribution - Age distribution percentages
-   */
+ 
   printReport(distribution) {
  
     console.log('\n========= Age Distribution Report =========');

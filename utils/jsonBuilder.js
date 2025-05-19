@@ -1,13 +1,6 @@
-/**
- * Utility for building structured JSON objects from flat CSV data
- * with dot notation for nested properties
- */
+
 class JSONBuilder {
-  /**
-   * Transforms a flat record with dot notation into a structured JSON object
-   * @param {Object} record - Flat record from CSV parser
-   * @returns {Object} - Structured object with proper nesting
-   */
+
   buildNestedObject(record) {
     const result = {};
     
@@ -21,12 +14,7 @@ class JSONBuilder {
     return result;
   }
   
-  /**
-   * Sets a nested property value using dot notation
-   * @param {Object} obj - Target object
-   * @param {string} path - Property path with dot notation (e.g., "address.city")
-   * @param {any} value - Value to set
-   */
+ 
   setNestedProperty(obj, path, value) {
     const parts = path.split('.');
     let current = obj;
@@ -45,18 +33,14 @@ class JSONBuilder {
     current[lastPart] = value;
   }
   
-  /**
-   * Formats a record for database insertion according to the required structure
-   * @param {Object} nestedRecord - Nested JSON object
-   * @returns {Object} - DB-ready object with required format
-   */
+ 
   formatForDatabase(nestedRecord) {
     // Extract mandatory fields
     const firstName = nestedRecord.name?.firstName || '';
     const lastName = nestedRecord.name?.lastName || '';
     const age = nestedRecord.age || 0;
     
-    // Combine first and last name as required
+    // Combine first and last name 
     const fullName = `${firstName} ${lastName}`.trim();
     
     // Extract address fields

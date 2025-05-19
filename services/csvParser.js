@@ -7,11 +7,7 @@ class CSVParser {
     this.delimiter = ',';
   }
 
-  /**
-   * Parses a CSV file and returns array of objects
-   * @param {string} filePath - Path to the CSV file
-   * @returns {Promise<Array>} - Array of parsed objects
-   */
+ 
   async parseFile(filePath) {
     try {
       // Read the file content
@@ -43,11 +39,7 @@ class CSVParser {
     }
   }
 
-  /**
-   * Parse a single CSV row into an array of values
-   * @param {string} row - CSV row
-   * @returns {Array} - Array of values
-   */
+ 
   parseRow(row) {
     const values = [];
     let currentValue = '';
@@ -75,12 +67,7 @@ class CSVParser {
     return values;
   }
 
-  /**
-   * Create a record object from headers and values
-   * @param {Array} headers - Array of header names
-   * @param {Array} values - Array of values
-   * @returns {Object} - Record object
-   */
+ 
   createRecord(headers, values) {
     const record = {};
     
